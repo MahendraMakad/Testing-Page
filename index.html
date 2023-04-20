@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Image Sharpening</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"
+		integrity="sha512-JjFeUD2H//RHt+DjVf1BTuy1X5ZPtMl0svQ3RopX641DWoSilJ89LsFGq4Sw/6BSBfULqUW/CfnVopV5CfvRXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+	<button class="button mx-2" id="imagePNG" disabled>PNG</button>
+	<button class="button mx-2" id="imageJPG" disabled>JPG</button>
+	<input type="file" id="file-input">
+	<div>
+		<canvas id="sharpened-canvas" width="360px" height="360px"></canvas>
+		<p>
+			Sharpness
+			<span class="sharpness">2</span>
+		</p>
+		<input type="range" min="1" max="32" value="8" class="slider" id="sharpSlider" />
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
